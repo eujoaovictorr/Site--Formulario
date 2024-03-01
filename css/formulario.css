@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #515353 45%, #fcfcfc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    margin: 40px 0 60px 0;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .header {
+    background-color: #eee;
+    padding: 20px;
+  }
+  
+  .form {
+    padding: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    border: none;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .form button {
+    background-color: #2e7b7c;
+    border: 2px solid #2e7b7c;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .mensagem-erro, .mensagem-sucesso {
+    color: #2e7b7c;
+    align-items: center;
+    text-align: center;
+  }

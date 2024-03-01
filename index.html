@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+    <title> Formulário </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2> Cadastro de cliente </h2>
+      </div>
+
+
+      <!----- Nome ----->
+      <form id="formulario" class="form">
+        <div class="form-control">
+          <label>Nome</label>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome..."
+            required
+          />
+        </div>
+
+        <!----- ID ----->
+        <div class="form-control">
+          <label>ID</label>
+          <input type="number" id="id" placeholder="Digite o seu ID..." required/>
+        </div>
+
+        <!----- Tipo De Cliente ----->
+        <div class="form-control">
+          <label id="tipo_de_cliente">Tipo de Cliente</label>
+          <select required>
+            <option>Selecione</option>
+            <option>Física</option>
+            <option>Jurídica</option>
+         </select>
+        </div>
+
+        <!----- Endereço ----->
+        <div class="form-control">
+          <label>Endereço</label>
+          <input
+            type="text"
+            id="endereco"
+            placeholder="Digite o seu endereço..."
+            required
+          />
+        </div>
+
+        <!----- CEP ----->
+        <div class="form-control">
+          <label>CEP</label>
+          <input
+            type="text"
+            id="cep"
+            placeholder="Digite o seu CEP..."
+            required
+          />
+        </div>
+
+        <!----- Data de Nascimento ----->
+        <div class="form-control">
+          <label>Data de Nascimento</label>
+          <input
+            type="date"
+            id="data_de_nascimento"
+            placeholder="Digite a data do seu nascimento..."
+            required
+          />
+        </div>
+
+
+        <!----- Vendedor ----->
+        <div class="form-control">
+          <label>Vendedor</label>
+          <input
+            type="text"
+            id="vendedor"
+            placeholder="Digite o nome do Vendedor..."
+            required
+          />
+        </div>
+
+        <!----- Limite de Crédito ----->
+        <div class="form-control">
+          <label>Limite de Crédito</label>
+          <input
+            type="number"
+            id="limite_de_credito"
+            placeholder="Digite o seu limite de crédito..."
+            required
+          />
+        </div>
+
+        <button type="submit"> Enviar </button>
+      </form>
+      <div id="mensagemError" class="mensagem-erro"></div>
+      <div id="mensagemSucesso" class="mensagem-sucesso"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/formulario.js"></script>
+  </body>
+</html>
